@@ -237,7 +237,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
     
     awful.key({ modkey,		  }, "c", function () awful.util.spawn("firefox") end),
-    awful.key({ modkey,		  }, "e", function () awful.util.spawn("rox") end),
+    awful.key({ modkey,		  }, "z", function () awful.util.spawn("zathura") end),
     awful.key({ "Mod1", "Control" }, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
     awful.key({ }, "Print", function () awful.util.spawn("scrot -e 'mv $f ~/screenshot/ 2>/dev/null'") end),
 
@@ -328,7 +328,7 @@ awful.rules.rules = {
                      buttons = clientbuttons,
 	     	     size_hints_honor = false  } },
     { rule = { class = "Firefox"              }, properties = { tag = tags[1][4] } },
-    { rule = { class = "ROX-Filer"          }, properties = { tag = tags[1][3] } },
+    { rule = { class = "FoxitReader"          }, properties = { tag = tags[1][3] } },
 }
 -- }}}
 
