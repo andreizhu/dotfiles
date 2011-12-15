@@ -2,7 +2,7 @@
 
 DIR=~/dotfiles
 
-
+ln -s $DIR/bash_aliases ~/.bash_aliases
 #pentadactyl
 ln -s $DIR/pentadactyl/ap.js ~/.pentadactyl/plugins/
 #awesome
