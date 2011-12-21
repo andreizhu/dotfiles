@@ -25,9 +25,14 @@ if has("syntax")
   syntax on
 endif
 
-"enable Omni completion
+" enable Omni completion
 filetype plugin on
 set ofu=syntaxcomplete#Complete
+
+
+" python indent
+au BufRead *.py set ai et nu sw=4 ts=4 tw=79
+
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
